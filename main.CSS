@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:  #5f27cd;
+    display: flex;
+    padding: 16px 0 ;
+    border-bottom: solid 16px #341f97;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase ;
+    font-style: italic;
+}
+
+header button{
+    margin-left: 20px;
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+}
+
+form {
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2 {
+    margin-bottom:16px ;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color: #009432;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#botao-cancelar {
+    background-color: red;
+}   
+
+ul {
+    display: flex; /* deixar as imagns uma ao lado da outra */
+    flex-wrap: wrap; /* para que quando se chegue no limite da tela a imagem ir para baixo */
+}
+
+ul li {
+    max-width: 25%; /* 25% pq vamos ter 4 imagem em cada linnha ou seja 25 x 4 =100% da tela */
+    list-style: none; /* remover as bolinhas do li */
+    position: relative; /* adicionado aqui pois é o elmento pai e vai fazer que n vaze o postion absolute do nosso layout é tipo como se eu tivesse falando pro pc olha ele não vai sair daqui de dento do li*/
+    max-height: 200px;
+    overflow-y: hidden; /* tudo que tiver dps desses 200px vai ser cortado por esse comando usamos y pois é esta na vertical as imagens ou seja vai cortar a imagem */
+}
+
+ul li img {
+    width: 100%; /* largura de 100% */
+    
+}
+.overley-image-link {
+    padding: 16px ;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0; /* colocar na extremidade */
+    left: 0; /* colocar na esquerda */
+    width: 100%;
+    opacity: 0;  /* pra sumir o o link de imagem tamanho real */
+    transition: all ease 1s; /* uma transiçao de 0.5seg para quando passar o mouse por cima aparecer o link */
+}
+
+.overley-image-link a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .overley-image-link {  /* pra aparacer o link quando passar o mouse por cima */
+    opacity: 1;
+}                                                                

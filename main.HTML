@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.CSS">
+</head>
+<body>
+    <header>
+        <h1>GALERIA DE FOTOS</h1>
+        <button type="button">NOVA IMAGEM+</button>
+    </header>
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <input type="url" id="endereco-imagem-nova" required placeholder="Endereço de imagem">
+        <button type="submit">ADICIONAR</button>
+        <button type ="reset" id="botao-cancelar">CANCELAR</button>
+    </form>
+    <ul> <!--- listas não ordenadas --->
+        <li>
+            <img src="/FontEnd M9 - images/images/foto1.jpg" alt="Pintura de um gato">
+            <div class="overley-image-link">
+                <a href="/FontEnd M9 - images/images/foto1.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="/FontEnd M9 - images/images/foto2.jpg" alt="Pintura de um gato">
+            <div class="overley-image-link">
+                <a href="/FontEnd M9 - images/images/foto2.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="/FontEnd M9 - images/images/foto3.jpg" alt="Pintura de um gato">
+            <div class="overley-image-link" >
+                <a href="/FontEnd M9 - images/images/foto3.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.JS"></script>
+</body>
+</html>
